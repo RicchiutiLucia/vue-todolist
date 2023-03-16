@@ -48,6 +48,13 @@ createApp({
     addTask(){
       this.todoList.unshift({testo:this.newTask,done:false});
       this.newTask="";
+    },
+    invertValue(task){
+      if(task.done == false){
+        task.done = true;
+      }else{
+        task.done = false;
+      }
     }
   }
 }).mount('#app')
