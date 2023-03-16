@@ -20,6 +20,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+      newTask:"",
       todoList:[
         {
           testo: 'task 1',
@@ -43,6 +44,10 @@ createApp({
   methods:{
     removeTask(index){
       this.todoList.splice(index,1);
+    },
+    addTask(){
+      this.todoList.unshift({testo:this.newTask,done:false});
+      this.newTask="";
     }
   }
 }).mount('#app')
