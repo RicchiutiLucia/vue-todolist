@@ -23,19 +23,19 @@ createApp({
       newTask:"",
       todoList:[
         {
-          testo: 'task 1',
+          testo: 'Task 1',
           done: false
         },
         {
-          testo: 'task 2',
+          testo: 'Task 2',
           done: true
         },
         {
-          testo: 'task 3',
+          testo: 'Task 3',
           done: false
         },
         {
-          testo: 'task 4',
+          testo: 'Task 4',
           done: true
         }
       ]
