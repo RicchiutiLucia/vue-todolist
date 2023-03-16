@@ -18,14 +18,14 @@
         <main class="container">
 
             <div class="newTask text-center">
-                <input type="text" placeholder="Inserisci qui la nuova task!">
+                <input type="text" placeholder="Inserisci la tua Task!">
                 <button>Aggiungi</button>
             </div>
 
             <div class="taskList">
                 <ul>
-                    <li>
-                        <span class="span-text">text</span>
+                    <li v-for="task in todoList">
+                        <span class="span-text" :class="task.done == true?'line-through':''">{{task.testo}}</span>
                         <i class="fa-solid fa-xmark"></i>
                     </li>
                 </ul>

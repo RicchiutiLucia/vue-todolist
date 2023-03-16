@@ -28,8 +28,8 @@ header img{
 
 .newTask input,.newTask button{
     padding: 15px;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 1px solid rgb(81, 75, 75);
+    border-radius: 5px;
 
 }
 
@@ -48,4 +48,8 @@ header img{
     border-bottom: 2px solid gray;
     display: flex;
     justify-content: space-between;
+}
+
+.line-through{
+    text-decoration: line-through;
 }
